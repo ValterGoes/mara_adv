@@ -1,4 +1,4 @@
-import mara2 from "../../assets/perfil/mara2.jpeg";
+import mara2 from "../../Assets/perfil/mara2.jpeg";
 import { BotaoWhats } from "../botoes/BotaoWhats";
 
 const Advogados = () => {
