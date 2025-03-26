@@ -1,6 +1,6 @@
 export { Advogados } from './advogados'
 export { Atuacao } from './Atuacao';
-export { Contatos } from './Contatos';
+export { Contatos } from './contatos';
 export { Depoimentos } from './Depoimentos';
 export { Localizacao } from './Localizacao';
 export { MyNavbar } from './Navbar';
