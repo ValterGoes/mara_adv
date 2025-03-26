@@ -1,9 +1,11 @@
 import linkedin from "../../../public/Assets/icon/linkedin.png";
-import instagramIcon from "../../../public/Assets/icon/instagram.png";
+// import instagram from "../../../public/Assets/icon/instagram.png";
 import whatsapp from "../../../public/Assets/icon/whatsapp.png";
 
 
 const Rodape = () => {
+
+  const instagramIcon = "/Assets/icon/instagram.png";
 
   const whatsappNumber = "+5551985655245";
   const message = encodeURIComponent(
