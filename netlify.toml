@@ -3,6 +3,6 @@
   publish = "dist"
 
 [[headers]]
-  for = "/*.jsx"
+  for = "/*.js"
   [headers.values]
     Content-Type = "application/javascript"
