@@ -1,5 +1,5 @@
 import linkedin from "../../../public/Assets/icon/linkedin.png";
-import instagram from "../../../public/Assets/icon/instagram.png";
+import instagramIcon from "../../../public/Assets/icon/instagram.png";
 import whatsapp from "../../../public/Assets/icon/whatsapp.png";
 
 
@@ -54,7 +54,7 @@ const Rodape = () => {
               className=" text-gray-900 dark:text-white"
             >
               <span className="sr-only">Instagram</span>
-              <img src={instagram} alt="Instagram" className="w-8 h-8" />
+              <img src={instagramIcon} alt="Instagram" className="w-8 h-8" />
             </a>
           </li>
 
