@@ -1,4 +1,4 @@
-import logo from "../../Assets/icon/logo.png";
+import logo from "../../../public/Assets/icon/logo.png";
 import {Typography } from "@material-tailwind/react";
 
 

@@ -1,6 +1,6 @@
-import linkedin from "../../Assets/icon/linkedin.png";
-import instagram from "../../Assets/icon/instagram.png";
-import whatsapp from "../../Assets/icon/whatsapp.png";
+import linkedin from "../../../public/Assets/icon/linkedin.png";
+import instagram from "../../../public/Assets/icon/instagram.png";
+import whatsapp from "../../../public/Assets/icon/whatsapp.png";
 
 
 const Rodape = () => {

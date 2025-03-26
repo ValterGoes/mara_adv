@@ -11,7 +11,7 @@ import {
   // Whatsapp,
 } from "../../Components";
 
-import Marmol from "../../Assets/background/Marmol.jpeg";
+import Marmol from "../../../public/Assets/background/Marmol.jpeg";
 
 
 const Inicial = () => {
