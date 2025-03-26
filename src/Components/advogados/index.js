@@ -1,0 +1,1 @@
+export { Advogados } from './Advogados';
