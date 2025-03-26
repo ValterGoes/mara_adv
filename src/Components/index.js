@@ -1,10 +1,10 @@
 export { Advogados } from './advogados'
-export { Atuacao } from './Atuacao';
+export { Atuacao } from './atuacao';
 export { Contatos } from './contatos';
-export { Depoimentos } from './Depoimentos';
-export { Localizacao } from './Localizacao';
-export { MyNavbar } from './Navbar';
-export { Rodape } from './Rodape';
-export { Whatsapp } from './Whatsapp';
-export { Banner} from './Banner';
+export { Depoimentos } from './depoimentos';
+export { Localizacao } from './localizacao';
+export { MyNavbar } from './navbar';
+export { Rodape } from './rodape';
+export { Whatsapp } from './whatsapp';
+export { Banner} from './banner';
 export { BotaoWhats } from './botoes';
