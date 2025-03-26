@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import mara2 from "../../../public/Assets/perfil/mara2.jpeg";
 import { BotaoWhats } from "../botoes/BotaoWhats";
 
@@ -7,13 +8,11 @@ const Advogados = () => {
       id="Quemsomos"
       className="flex flex-col items-center py-16 md:py-32 bg-gray-50 gap-10"
     >
-
       <h2 className="text-5xl font-GaramondSerif text-center mb-10 text-black">
         Quem somos
       </h2>
 
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 space-y-16">
-        
         {[
           {
             nome: "Maragonesa Teixeira",
@@ -22,20 +21,34 @@ const Advogados = () => {
             imagem: mara2,
             botao: "Conversar com a Dra. Mara",
             invertido: false,
-          }
+          },
         ].map(({ nome, descricao, imagem, botao, invertido }, index) => (
-          
-          <div
+          <motion.div
             key={index}
             className={`flex flex-col lg:flex-row ${
               invertido ? "lg:flex-row-reverse" : ""
             } lg:items-center lg:h-full`}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+            }}
           >
-            {/* Imagem */}
-            <div className="relative z-10 flex justify-center lg:w-1/2 lg:py-16">
-              <div
-                className={`relative h-64 sm:h-80 lg:h-[28rem] w-full max-w-md lg:max-w-none`}
-              >
+            {/* Imagem com animação */}
+            <motion.div
+              variants={{
+                hidden: { x: invertido ? 200 : -200, opacity: 0 },
+                visible: {
+                  x: 0,
+                  opacity: 1,
+                  transition: { duration: 0.8, ease: "easeOut" },
+                },
+              }}
+              className="relative z-10 flex justify-center lg:w-1/2 lg:py-16"
+            >
+              <div className="relative h-64 sm:h-80 lg:h-[28rem] w-full max-w-md lg:max-w-none">
                 <img
                   alt={`Foto da advogada ${nome}`}
                   src={imagem}
@@ -46,10 +59,18 @@ const Advogados = () => {
                   }`}
                 />
               </div>
-            </div>
+            </motion.div>
 
-            {/* Conteúdo */}
-            <div
+            {/* Card com animação */}
+            <motion.div
+              variants={{
+                hidden: { x: invertido ? -200 : 200, opacity: 0 },
+                visible: {
+                  x: 0,
+                  opacity: 1,
+                  transition: { duration: 0.8, ease: "easeOut" },
+                },
+              }}
               className={`relative flex flex-col justify-center w-[22rem] md:w-[28rem] bg-gray-200 rounded-b-lg lg:w-1/2 h-[28rem] px-6 sm:px-10 lg:px-16 ${
                 invertido
                   ? "lg:rounded-l-lg lg:rounded-r-none"
@@ -67,13 +88,10 @@ const Advogados = () => {
 
                 <BotaoWhats title={botao} />
               </div>
-            </div>
-          </div>
-
+            </motion.div>
+          </motion.div>
         ))}
-
       </div>
-
     </section>
   );
 };
