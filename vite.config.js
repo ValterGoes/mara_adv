@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     vitePluginSitemap({
-      hostname: 'https://maragonesateixeira.com.br',
+      hostname: 'https://maragonesateixeira.adv.br',
       outDir: 'dist',
       urls: [
         { url: '/', changefreq: 'daily', priority: 1.0 },
