@@ -10,7 +10,7 @@ export default defineConfig({
       hostname: 'https://maragonesateixeira.adv.br',
       outDir: 'dist',
       urls: [
-        { url: '/Inicial', changefreq: 'daily', priority: 1.0 },
+        { url: '/', changefreq: 'daily', priority: 1.0 },
       ],
   base: '/',
 })
