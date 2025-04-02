@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maragonesateixeira.adv.br/sitemap.xml
+Sitemap: https://maragonesateixeira.com.br/sitemap.xml
