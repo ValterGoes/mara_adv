@@ -13,7 +13,14 @@ export default defineConfig({
         { url: '/', changefreq: 'daily', priority: 1.0 },
       ],
   base: '/',
-})
+}),
+    vitePluginSitemap({
+      hostname: 'https://maragonesateixeira.com.br',
+      outDir: 'dist',
+      urls: [
+        { url: '/', changefreq: 'daily', priority: 1.0 },
+      ],
+    }),
   ],
   server: {
     port: 3000,
