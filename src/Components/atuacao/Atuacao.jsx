@@ -16,7 +16,7 @@ const CardAtuacao = ({ titulo, descricao, lista, bgImageClass }) => {
       <div className="relative z-10 text-center text-white flex flex-col justify-center h-full">
         <h3 className="text-4xl font-RobotoSans mb-2">{titulo}</h3>
         <p className="text-2xl my-20">{descricao}</p>
-        <ul className="text-xl">
+        <ul className="text-xl font-RobotoSans">
           {lista.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
