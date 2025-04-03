@@ -34,14 +34,15 @@ export default {
           '2xl': '1536px',
           // => @media (min-width: 1536px) { ... }
         },
-        fontFamily: {
-          'GaramondSerif': ['Cormorant Garamond', 'serif'],
-          'MerriSerif': ['Merriweather', 'serif'], // Para títulos ou textos mais formais
-          'RobotoSans': ['Roboto', 'sans-serif'],   // Para textos do corpo
-        }
+        
       },
 
     },
+    fontFamily: {
+      'GaramondSerif': ['Cormorant Garamond', 'serif'],
+      'MerriSerif': ['Merriweather', 'serif'], // Para títulos ou textos mais formais
+      'RobotoSans': ['Roboto', 'sans-serif'],   // Para textos do corpo
+    }
   },
   plugins: [],
 }
